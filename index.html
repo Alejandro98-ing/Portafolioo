@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylencript.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fontawesome.com/icons/circle-exclamation?f=classic&s=solid">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <div class="caja">
+            <h1><img class="logo" src="Logo.png" alt="logo de alura" >Encriptador de texto - ONE Alura Challenge - G5</h1>
+        </div>
+    </header>
+    <main>
+        <section>
+            <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <div>
+                <h6 class="informacion"><img class="img-advertencia" src="info_FILL0_wght400_GRAD0_opsz48.png" alt="Advertencia de error"> Solo letras minúsculas y sin acentos</h6>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section>
+            <textarea class="mensaje" cols="20" rows="10"></textarea>
+            <p class="txt-error">Ningún mensaje fue <br>encontrado</p>
+            <p class="txt-errordos">Ingresa el texto que desees encriptar o<br> desencriptar</p>
+            <div>
+                <button class="copiar" onclick="copiar()">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="cajados">
+            <h1><img class="banderasv" src="descarga.png"> Oscar Alejandro López Clímaco</h1>
+        </div>
+        
+    </footer>
+<script src="codigojs.js"></script>
+</body>
+</html>
